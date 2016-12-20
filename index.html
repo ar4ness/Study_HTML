@@ -44,7 +44,7 @@
 				<li>
 					<span>text</span>
 					<input type="radio" name="radio" checked>
-				</li><!--name="radio" - very important thing!-->
+				</li><!--name="radio" - very important thing! remember to use it-->
 				<li>
 					<span>text</span>
 					<input type="radio" name="radio" disabled>
@@ -54,8 +54,36 @@
 					<input type="radio" name="radio" title="title">
 				</li>
 			</ul>
+			<input type="submit" value="Some name of button">
+			<input type="reset">
+			<button>Button</button><!--it is just a button for visualization, no action without JS-->
+			<a href="#">Button</a>
 		</div>
 	</div>
+	<div>
+		<select> <!-- using for filtration-->
+			<option disabled>text1</option>
+			<option label="new text">text2</option>
+			<option value="data">text3</option> <!-- value = "" it may be used later in JS-->
+			<option >text4</option>
+			<option selected>text5</option>
+		</select>
+	</div>
+	<div>
+		<select size="3"> 
+			<option disabled>text1</option>
+			<option label="new text">text2</option>
+			<option value="data">text3</option> 
+			<option >text4</option>
+			<option selected>text5</option>
+		</select>
+	</div>
+	<textarea disabled></textarea>
+	<textarea value="value"></textarea>
+	<textarea placeholder='sometext'></textarea> 
+	<textarea rows="5" cols="10"></textarea>
+	<input type="file">
+	<div></div>
 	</form>
 </body>
 </html>
