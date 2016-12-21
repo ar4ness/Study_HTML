@@ -7,22 +7,55 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-	<ul>
-		<li>
-			<a href="pages/page1.html" target="_blank" title="link to google">
-				<img src="http://www.planwallpaper.com/static/images/desktop-year-of-the-tiger-images-wallpaper.jpg" alt="just image">
-			</a>
-		</li>
-		<li>
-			<a href="pages/page2.html" title="link to page">
-				<img src="http://i164.photobucket.com/albums/u8/hemi1hemi/COLOR/COL9-6.jpg" alt="just image">
-			</a>
-		</li>
-		<li>
-			<a href="pages/page3.html" title="link to page">
-				<img src="http://i.dailymail.co.uk/i/pix/2016/09/13/14/384A98B300000578-0-image-a-63_1473774825844.jpg" alt="just image">
-			</a>
-		</li>
-	</ul>
+	<form action="">
+	<fieldset> <!-- very uncomfortable thing, better do not use it-->
+		<legend>List of inputs</legend>
+		<span>Text field</span>
+		<input type="text" placeholder="Text">
+	</fieldset>
+	<fieldset>
+		<span>Password</span>
+		<input type="password" placeholder="type your pass" size="50"><!-- you can also wright: maxlength="3"-->
+	</fieldset>
+	<fieldset>
+		<span>Email</span>
+		<input type="email">
+	</fieldset>
+	<fieldset>
+		<span>Num</span>
+		<input type="number"><br>
+		<input type="password">
+	</fieldset>
+	<div>
+		<span> checkbox</span>
+		<div>
+		<label for="checkbox1">title text</label>
+			<input type="checkbox" id="checkbox1" class="new-class"> 
+		</div>
+		<div>
+		<label>title2 text<input type="checkbox">
+		</label>
+			</div>
+		<!-- id can be used just once  but class can be used as many times as it is needed-->
+	</div>
+	<div>
+		<div>
+			<ul>
+				<li>
+					<span>text</span>
+					<input type="radio" name="radio" checked>
+				</li><!--name="radio" - very important thing!-->
+				<li>
+					<span>text</span>
+					<input type="radio" name="radio" disabled>
+				</li>
+				<li>
+					<span>text</span>
+					<input type="radio" name="radio" title="title">
+				</li>
+			</ul>
+		</div>
+	</div>
+	</form>
 </body>
 </html>
