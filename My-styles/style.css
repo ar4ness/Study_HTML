@@ -1,0 +1,98 @@
+body {margin: 0;}
+#main-container {
+	border: 2px solid #000;
+	
+	color: #00f;
+	width: 150px;
+	}
+p {color: red;}
+	/*#main-container p {color: #00f;}
+	#main-container span {color: #0f0;}*/
+span {color: #f0f;}
+	/*#main-container .inner-wrapper {color: #000;}
+	.inner-wrapper span {color: #f00;}
+	span {color: #0f0;}*/
+#main-container .inner-wrapper {color: #000;}
+/*#main-container .inner-wrapper .third {#0f0;}*/
+
+/*.inner-wrapper .third {background-color:#f00;}*/
+.third.left {background-color: #ff0;}
+
+* {box-sizing: border-box;} /* properties for all elements. may be used to set properties by default*/
+
+.inner-wrapper li {
+	border: 2px solid #0f0;
+}
+.inner-wrapper li:first-child {
+	border-color: #000;
+}
+.inner-wrapper li:last-child {
+	border-style: dotted;
+}
+ul > li {background-color: #000;}
+.inner-wrapper ~ div {
+	width:150px;
+	height:150px;
+	background: #00f;
+}
+.inner-wrapper + div {
+	width:150px;
+	height:150px;
+	background: #f0f;
+}
+/*.inner-wrapper li:nth-child(5) {
+	background-color: #fff;
+}*/
+.inner-wrapper li:nth-child(2n-1) {
+	background-color: #fff;
+}
+
+[type="text"] {
+	
+}
+
+[class^="inn"] {
+	border: 5px solid #000;
+}
+[class$="inn"] {
+	border: 5px solid #000;
+}
+a:visited {}/* for visited links*/
+a:link {}
+[href^="http"] {}/* for searching only links*/
+
+li span:hover {
+	color: #fff;
+	cursor:pointer;
+} /*for using mouse*/
+
+/*list-style: list-style-type list-style-position list-style-image;*/
+
+ul {
+	padding:0;
+	margin:0;
+	list-style-type: none;
+	/*list-style-position: inside;*/
+	/*list-style-image: url('');*/
+}
+
+/*li {
+	list-style-type: none;
+}*/
+
+span {
+	text-decoration: underline;
+	text-decoration: overline;
+	text-decoration: line-through;
+	text-decoration: none;
+}
+
+li {
+	position:relative;
+}
+.absolute {
+	position:absolute;
+	left:0;
+	top:50%;
+	
+}
