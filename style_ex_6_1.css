@@ -1,0 +1,47 @@
+#fone {
+	height:700px; 
+	border:1px solid #ccc;  
+	background: url('http://www.narand.com/images/qss/background/big/8.jpg') no-repeat 100%; 
+	background-color: rgba(0, 200, 0, 0.5);
+}
+
+#leftBlock {
+	display:inline-block; 
+	float:left;
+}
+
+.first {
+	width:180px; 
+	height:180px; 
+	margin: 0px 0px 20px 0px;  
+	background: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQd1XvC_Gwts8VeVM_qLgtJAzN65Df0IDYcwft6uIX2_BuwGLVtqQ') repeat round  0% 0%/60px 60px;
+}
+.second { 
+	width:180px; 
+	height:180px; 
+	background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEz7MlodE3Yb6NjEOnDDyLIcFzILA1l71AoOq2HZbAvpy1ttTL') repeat round 0% 0/60px 60px;
+}
+
+#rightBlock {
+	display:inline-block; 
+	float:right;
+}
+.third {
+	width:180px; 
+	height:180px; 
+	background: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXMZJ238HL00Lc9nTCYeMu4Pjm0LmuGhIz8GlgFWfZiknoRaYy') space repeat 0% 0%/59px 59px; background-color:red; margin: 0px 0px 20px 0px; 
+	border:1px solid red;
+}
+
+.fourth {
+	width:180px; 
+	height:180px; 
+	background: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRztzbZRNBM9hk48YFkK0eD7Vhz3s7nM4Y5u9-4u-KVqcjttsCr') repeat space 0% 0%/59px 59px; background-color:red; 
+	border:1px solid red;
+}
+p {
+	font-size:14px; 
+	font-weight: 600; 
+	line-height:1.5; 
+	text-align:justify;
+}
