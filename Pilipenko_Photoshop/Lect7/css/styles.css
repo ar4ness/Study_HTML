@@ -50,9 +50,12 @@ a {
 .dark-background {
 	background: #3f4049;
 }
+.grey-background {
+	background: #f7f7f7;
+}
 
 .btn {
-	background: #fc5945;
+	
 	border:  2px solid transparent;
 	border-radius: 25px;
 	color: #fff;
@@ -64,6 +67,36 @@ a {
 	height: 50px;
 	width: 180px;
 }
+.btn.red {
+	background-color: #fc5945;
+	
+}
+.btn.green {
+	background-color: #38c695;
+	
+}
+.btn.blue {
+	background-color: #b27cf5;
+	
+}
+.btn.red:hover,
+.btn.green:hover,
+.btn.blue:hover{
+	background-color: transparent;
+}
+.btn.red:hover {
+	color: #fff;
+	border-color: #fc5f45;
+}
+.btn.green:hover {
+	border-color: #38c695;
+	color: #38c695;
+}
+.btn.blue:hover {
+	border-color: #b27cf5;
+	color: #b27cf5;
+}
+
 .head-menu ul {font-size: 0;}
 .head-menu li {
 	display: inline-block;
@@ -142,7 +175,7 @@ header {
 	right:0;
 	top: 50%;
 	transform: translate(0, -50%);
-	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05); 
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); 
 	background: #fff;
 	width: 650px;
 	padding: 90px 80px 70px;
@@ -177,4 +210,31 @@ header {
 }
 .about-article p {
 	margin-bottom: 30px;
+}
+.focus-list {
+	font-size:0;
+	text-align: center;
+}
+.focus-list li {
+	background-color: #fff;
+	display: inline-block;
+	margin-right: 30px;
+	position: relative;
+	
+	
+}
+focus-article {
+	position:relative;
+	padding: 65px 35px 0;
+}
+.focus-article .icon {
+	background: url(..img/icons-sprites.png) no repeat;
+	height: 49px;
+	width: 55px;
+}
+.focus-article .icon.web-des {
+	background-position: 0 0;
+}
+.focus-article .icon.ux-des {
+	background-position: 0 0;
 }
