@@ -16,6 +16,8 @@ h2 {
 	line-height: 1;
 	margin: 0;
 }
+
+
 p {
 	color: #616161;
 	font: 400 15px/1.8 'Poppins', sans-serif;
@@ -169,7 +171,10 @@ header {
 	position: relative;
 	
 }
-
+.portfolio-items {
+	width: 33.333333%;
+	padding: 0 10px 20px;
+}
 .about-article {
 	position: absolute;
 	right:0;
@@ -203,7 +208,6 @@ header {
 }
 .about-article .inner-wrapper {
 	position: relative;
-	
 }
 .about-article h2 {
 	margin-bottom: 40px;
@@ -211,6 +215,34 @@ header {
 .about-article p {
 	margin-bottom: 30px;
 }
+
+.numbered-block {
+	position: relative;
+	padding: 140px 0 150px;
+}
+
+.numbered-block:before {
+	content: attr(data-number);
+	color: rgba(224, 224, 224, 0.3);
+	line-height: 1;
+	font-size: 273px;
+	font-weight: 800;
+	position:  absolute;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+}
+
+.numbered-block .content-wrapper {
+	position: relative;
+}
+.focus-block h2 {margin-bottom: 30px;}
+.title-block {margin-bottom: 75px;}
+.title-block p,
+.title-block h2 {
+	text-align: center;
+}
+
 .focus-list {
 	font-size:0;
 	text-align: center;
@@ -220,21 +252,80 @@ header {
 	display: inline-block;
 	margin-right: 30px;
 	position: relative;
-	
-	
+	height: 350px;
+	width: 262px;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+	border-bottom: 3px solid transparent;
+	vertical-align: top;
 }
-focus-article {
+
+.focus-article {
 	position:relative;
 	padding: 65px 35px 0;
 }
+
 .focus-article .icon {
-	background: url(..img/icons-sprites.png) no repeat;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	background: url(../img/icons-sprites.png) no-repeat;
 	height: 49px;
 	width: 55px;
 }
-.focus-article .icon.web-des {
-	background-position: 0 0;
+.focus-article .icon.web-des {background-position: 0 0;}
+.focus-article .icon.ux-des {background-position: -60px 0;}
+.focus-article .icon.photo {background-position: -120px 0;}
+.focus-article .icon.app-dev {background-position: -180px 0;}
+
+.focus-article .article-title{
+	padding-top: 75px;
+	position: relative;
+	margin-bottom: 25px;
 }
-.focus-article .icon.ux-des {
-	background-position: 0 0;
+.focus-article h3 {
+	color: #313131;
+	font: 500 20px/1 'Poppins', sans-serif;
 }
+
+.focus-list li:last-child {margin-right: 0;}
+
+.focus-list li:nth-child(1) {border-color: #fc5f45;}
+.focus-list li:nth-child(2) {border-color: #38c695;}
+.focus-list li:nth-child(3) {border-color: #a27cf5;}
+.focus-list li:nth-child(4) {border-color: #feb960;}
+
+.player-block {
+	padding: 145px 0;
+	text-align: center;
+}
+.player-block h3{
+	color: #fff;
+	font: 400 30px "Poppins", sans-serif;
+	margin-bottom: 30px;
+	
+}
+
+.player-block p {
+	color: #fff;
+	font-size: 15px;
+}
+.player-block .btn-holder {
+	margin-bottom: 40px;
+}
+
+.portfolio-block {
+	
+}
+.portfolio-items {
+	width: 100%;
+}
+.portfolio-items li {
+	width: 33.33333%;
+	padding: 0 10px 20px;
+	
+}
+.portfolio-items img {
+	width: 100%;
+}
+
