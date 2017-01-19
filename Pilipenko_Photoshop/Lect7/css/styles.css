@@ -13,10 +13,13 @@ h1 {
 h2 {
 	color: #313131;
 	font: 700 50px/1 'Libre Baskerville', serif;
-	line-height: 1;
 	margin: 0;
 }
 
+h3 {
+	font: 500 20px/1 'Poppins', sans-serif;
+	margin: 0;
+}
 p {
 	color: #616161;
 	font: 400 15px/1.8 'Poppins', sans-serif;
@@ -331,6 +334,7 @@ header {
 .team-list {
 	font-size:0;
 	text-align: center;
+	margin-bottom: 50px;
 }
 .team-list li {
 	background-color: #fff;
@@ -377,9 +381,10 @@ header {
 
 .team-article h3 {
 	font: 500 18px/1 'Poppins', sans-serif;
+	margin: 15px 0;
 }
 
-.team-list h3:nth-child(1) {color: #fc5f45;}
+.team-list li:nth-child(1) h3 {color: #fc5f45;}
 .team-list h3:nth-child(2) {color: #38c695;}
 .team-list h3:nth-child(3) {color: #a27cf5;}
 .team-list h3:nth-child(4) {color: #feb960;}
@@ -388,67 +393,183 @@ header {
 	font: 400 13px/1 'Poppins', sans-serif;
 }
 
-.bennet {
-	display: inline-block;
-	background-color: #fff;
-	margin-top: 50px;
-	padding: 75px 100px;
-	
-}
-.about-bennet {
-	text-align: left;
-	width: /*635px;*/68%;
 
+
+.article-about {
+	
+	background-color: #fff;
+	/*margin-top: 50px;*/
+	padding: 75px 100px;
+	/*text-align: left;*/
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
 }
-.about-bennet h3 {
-	font: 500 20px/1 'Poppins', sans-serif;
-}
-.icon-connect {
-width: /*180px;*/19%;
-}
-.icon .connect {
-	background: url(../img/icon-con.png) no-repeat;
+
+.article-about h3 {
+	color: #272727;
+	margin-bottom: 30px;
 	
 }
-.about-bennet .social {
-	width: /*125px;*/13%;
-	border-left: 2px solid #efefef;
+
+.article-about .inner-content {font-size: 0;}
+
+.article-about .description-part, .article-about .soc-part {
+	display: inline-block;
+	vertical-align: middle;
 }
+.article-about .description-part {
+	max-width: 815px;
+	border-right: 2px solid #efefef;
+	padding-right: 175px;
+	position: relative;
+	width: 100%;
+}
+
+.description-part .share-icon {
+	/*background: url(../img/icon-con.png) no-repeat;*/
+	position: absolute;
+	right: 30px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.article-about .soc-part {
+	margin-left: 25px;
+}
+.article-about .soc-part a {
+	color: #616161;
+	font: 400 15px/1 'Poppins', sans-serif;
+	position: relative;
+	padding-left: 20px;
+}
+
+.article-about .soc-part li {
+	margin-bottom: 15px;
+}
+
+.article-about .soc-part li:last-child {
+	margin-bottom: 0;
+}
+
+.article-about .soc-part .fa {
+	color: inherit;
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 15px;
+	
+}
+
+
 
 
 
 
 .statistic-block {
-	height: 465px;
-	background: url(../img/coffee.jpg) no-repeat;
+	/*height: 465px;*/
+	background: url(../img/coffee.jpg) no-repeat 50%/cover;
+	/*text-align: center;*/
+	padding: 140px 120px;
 }
-.content-wrapper {
+/*.statistic-block .content-wrapper {
 	padding: 165px 0 125px;
-}
-
-.statistic li {
-	background-color: transparent;
 	display: inline-block;
-	/*margin-right: 30px;*/
+}*/
+
+.statistic-block ul {
+	margin: 0 -15px;
+}
+/*.statistic {
+	font-size:0;
+	text-align: center
+}*/
+.statistic-block li {
+	/*background-color: transparent;
+	display: inline-block;
+	margin-right: 30px;
 	position: relative;
-	height: 350px;
-	width: 23%;
+	height: 350px;*/
+	width: 25%;
 	text-align: center;
-	vertical-align: top;
+	/*vertical-align: top;
+	color: #fff;*/
+	float: left;
+	padding: 0 15px;
+	
 }
 
-.icon.statistic {
+.statistic-block h3 {
+	color: #fefefe;
+	margin-bottom: 25px;
+	padding-top: 75px;
+}
+ .statistic-block p {
+	 color: rgba(254, 254, 254, 0.7);
+	 margin-bottom: 25px;
+ }
+/*.icon.statistic {
 	background: url(../img/icon-statistic.png) no-repeat;
+}*/
+.statistic-block .projects h3 {
+	background:url(../img/icon-statistic.png) no-repeat 50% 0;
+}
+.statistic-block .clients h3 {
+	background:url(../img/icon-client.png) no-repeat 50% 0;
+}
+.statistic-block .feedbacks h3 {
+	background:url(../img/icon-heart.png) no-repeat 50% 0;
+}
+.statistic-block .releases h3 {
+	background:url(../img/icon-present.png) no-repeat 50% 0;
 }
 
+.statistic-block .circle {
+	border: 2px solid transparent;
+	border-radius: 50%;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	position: relative;
+}
 
+.statistic-block .circle:before {
+	content: "";
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	width: 7px;
+	height: 7px;
+}
 
+.statistic-block .projects .circle {
+	border-color: #fc5f45;
+}
+.statistic-block .projects .circle:before {
+	background-color: #fc5f45;
+}
 
+.statistic-block .clients .circle {
+	border-color: #38c695;
+}
+.statistic-block .clients .circle:before {
+	background-color: #38c695;
+}
 
+.statistic-block .feedbacks .circle {
+	border-color: #b27cf5;
+}
+.statistic-block .feedbacks .circle:before {
+	background-color: #b27cf5;
+}
 
-
-
-
+.statistic-block .releases .circle {
+	border-color: #feb960;
+}
+.statistic-block .releases .circle:before {
+	background-color: #feb960;
+}
 
 
 
