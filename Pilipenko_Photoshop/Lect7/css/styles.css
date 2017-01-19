@@ -17,7 +17,6 @@ h2 {
 	margin: 0;
 }
 
-
 p {
 	color: #616161;
 	font: 400 15px/1.8 'Poppins', sans-serif;
@@ -57,7 +56,6 @@ a {
 }
 
 .btn {
-	
 	border:  2px solid transparent;
 	border-radius: 25px;
 	color: #fff;
@@ -71,15 +69,12 @@ a {
 }
 .btn.red {
 	background-color: #fc5945;
-	
 }
 .btn.green {
 	background-color: #38c695;
-	
 }
 .btn.blue {
 	background-color: #b27cf5;
-	
 }
 .btn.red:hover,
 .btn.green:hover,
@@ -162,14 +157,12 @@ header {
 	background: url(../img/icon-cl.png) no-repeat;
 }
 
-
 .about-block {
 	padding: 150px 0;
 }
 
 .about-block .content-wrapper {
 	position: relative;
-	
 }
 .portfolio-items {
 	width: 33.333333%;
@@ -193,8 +186,8 @@ header {
 	font-weight: 800;
 	font-size: 273px;
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: -5px;
+	left: -12px;
 }
 
 .about-article:after {
@@ -206,15 +199,11 @@ header {
 	right: 0;
 	height: 3px;
 }
-.about-article .inner-wrapper {
-	position: relative;
-}
-.about-article h2 {
-	margin-bottom: 40px;
-}
-.about-article p {
-	margin-bottom: 30px;
-}
+.about-article .inner-wrapper {position: relative;}
+.about-article h2 {margin-bottom: 40px;}
+.about-article p {margin-bottom: 30px;}
+
+
 
 .numbered-block {
 	position: relative;
@@ -236,11 +225,14 @@ header {
 .numbered-block .content-wrapper {
 	position: relative;
 }
-.focus-block h2 {margin-bottom: 30px;}
+/*.focus-block h2 {margin-bottom: 30px;}*/
 .title-block {margin-bottom: 75px;}
-.title-block p,
+.title-block p  {
+	text-align: center;
+}
 .title-block h2 {
 	text-align: center;
+	margin-bottom: 40px;
 }
 
 .focus-list {
@@ -303,7 +295,6 @@ header {
 	color: #fff;
 	font: 400 30px "Poppins", sans-serif;
 	margin-bottom: 30px;
-	
 }
 
 .player-block p {
@@ -314,18 +305,158 @@ header {
 	margin-bottom: 40px;
 }
 
-.portfolio-block {
-	
-}
+
 .portfolio-items {
 	width: 100%;
+	/*margin:0 -10px; - Ser*/
 }
 .portfolio-items li {
+	float: left;
 	width: 33.33333%;
 	padding: 0 10px 20px;
-	
 }
 .portfolio-items img {
 	width: 100%;
 }
+
+.features-set .icon {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -20px;
+	width: 40px;
+	height: 40px;
+}
+
+.team-list {
+	font-size:0;
+	text-align: center;
+}
+.team-list li {
+	background-color: #fff;
+	display: inline-block;
+	margin-right: 30px;
+	position: relative;
+	height: 350px;
+	width: 262px;
+	border: 3px solid transparent;
+	vertical-align: top;
+}
+.team-article {
+	position:relative;
+	padding: 265px 35px 0;
+}
+
+.team-article .icon {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	height: 256px;
+	width: 256px;
+}
+
+.icon.image5 {
+	background: url(../img/image5.png) no-repeat;
+}
+.icon.image6 {
+	background: url(../img/image6.png) no-repeat;
+}
+.icon.image7 {
+	background: url(../img/image7.png) no-repeat;
+}
+.icon.image8 {
+	background: url(../img/image8.png) no-repeat;
+}
+.team-list li:last-child {margin-right: 0;}
+
+.team-list li:nth-child(1) {border-bottom-color: #fc5f45;}
+.team-list li:nth-child(2) {border-bottom-color: #38c695;}
+.team-list li:nth-child(3) {border-bottom-color: #a27cf5;}
+.team-list li:nth-child(4) {border-bottom-color: #feb960;}
+
+.team-article h3 {
+	font: 500 18px/1 'Poppins', sans-serif;
+}
+
+.team-list h3:nth-child(1) {color: #fc5f45;}
+.team-list h3:nth-child(2) {color: #38c695;}
+.team-list h3:nth-child(3) {color: #a27cf5;}
+.team-list h3:nth-child(4) {color: #feb960;}
+
+.team-article p {
+	font: 400 13px/1 'Poppins', sans-serif;
+}
+
+.bennet {
+	display: inline-block;
+	background-color: #fff;
+	margin-top: 50px;
+	padding: 75px 100px;
+	
+}
+.about-bennet {
+	text-align: left;
+	width: /*635px;*/68%;
+
+}
+.about-bennet h3 {
+	font: 500 20px/1 'Poppins', sans-serif;
+}
+.icon-connect {
+width: /*180px;*/19%;
+}
+.icon .connect {
+	background: url(../img/icon-con.png) no-repeat;
+	
+}
+.about-bennet .social {
+	width: /*125px;*/13%;
+	border-left: 2px solid #efefef;
+}
+
+
+
+
+.statistic-block {
+	height: 465px;
+	background: url(../img/coffee.jpg) no-repeat;
+}
+.content-wrapper {
+	padding: 165px 0 125px;
+}
+
+.statistic li {
+	background-color: transparent;
+	display: inline-block;
+	/*margin-right: 30px;*/
+	position: relative;
+	height: 350px;
+	width: 23%;
+	text-align: center;
+	vertical-align: top;
+}
+
+.icon.statistic {
+	background: url(../img/icon-statistic.png) no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
