@@ -902,7 +902,9 @@ h4 {
 }
 
 
-
+.select-block ul {
+	display: flex;
+}
 
 
 
